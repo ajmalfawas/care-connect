@@ -1,0 +1,55 @@
+###
+GET http://127.0.0.1:8000/doc/
+Content-Type: application/json
+
+###
+POST http://127.0.0.1:8000/doc/
+Content-Type: application/json
+
+{
+                "name":"ajmal",
+                "specilization":"mbbbs",
+                "experience":"5 years",
+                "hospital":"mims",
+                "qualification":"mbbs",
+                "consultingFee":100
+
+}
+
+###
+GET http://127.0.0.1:8000/doc/1/
+Content-Type: application/json
+
+###
+PUT http://127.0.0.1:8000/doc/1/
+Content-Type: application/json
+
+{
+    "id": 1,
+  "name": "ajmal",
+  "specilization": "mbbbs",
+  "experience": "6 years",
+  "hospital": "aster",
+  "qualification": "mbbs"
+}
+
+###
+DELETE http://127.0.0.1:8000/doc/1/
+
+
+###
+GET http://127.0.0.1:8000/appoiment/
+Accept:application/json
+
+###
+POST http://127.0.0.1:8000/appoiment/
+Content-Type: application/json
+
+{
+   "patient_name":"favas1243334",
+   "doctor_name":"ajmal",
+   "doctor_id":1,
+   "phone":245568978661235358,
+   "appointment_date":"2026-11-01",
+   "problem":"fever"
+}
